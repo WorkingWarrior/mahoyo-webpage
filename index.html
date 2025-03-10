@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahoyo PL - Tłumaczenie Visual Novel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+            },
+          },
+        },
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 min-h-screen font-sans">
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="index.html" class="text-xl font-bold text-purple-700">Mahoyo PL</a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-purple-700 font-medium">Strona główna</a>
+          <a href="ekipa.html" class="text-gray-600 hover:text-purple-700">Ekipa</a>
+          <a href="status.html" class="text-gray-600 hover:text-purple-700">Stan projektu</a>
+        </div>
+        
+        <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </nav>
+      
+      <div class="hidden md:hidden" id="mobile-menu">
+        <div class="flex flex-col space-y-4 py-4">
+          <a href="index.html" class="text-purple-700 font-medium">Strona główna</a>
+          <a href="ekipa.html" class="text-gray-600 hover:text-purple-700">Ekipa</a>
+          <a href="status.html" class="text-gray-600 hover:text-purple-700">Stan projektu</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section class="py-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl font-bold text-purple-700 mb-4">Mahoyo PL</h1>
+        <p class="text-xl text-gray-600 mb-8">Polski projekt tłumaczenia visual novel "Mahoutsukai no Yoru"</p>
+        <div class="bg-purple-50 rounded-lg p-6 shadow-sm">
+          <p class="text-gray-700 mb-4">Witamy na oficjalnej stronie polskiego tłumaczenia visual novel "Mahoutsukai no Yoru" (często skracanej jako "Mahoyo"). Naszym celem jest udostępnienie tego wyjątkowego dzieła polskim fanom.</p>
+          <a href="status.html" class="inline-block bg-purple-600 text-white px-6 py-2 rounded-md hover:bg-purple-700 transition">Sprawdź postęp prac</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">O grze</h2>
+        <div class="bg-white rounded-lg shadow-sm p-6">
+          <p class="text-gray-700 mb-4">"Mahoutsukai no Yoru" (魔法使いの夜) to visual novel stworzona przez studio TYPE-MOON, znane z serii Fate. Gra opowiada historię Aoko Aozaki, młodej czarodziejki, i jej relacji z innymi bohaterami w magicznym świecie.</p>
+          <p class="text-gray-700">Oryginalna gra została wydana w Japonii, a nasz projekt ma na celu udostępnienie jej polskim graczom poprzez pełne tłumaczenie.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-50 border-t border-gray-200">
+    <div class="container mx-auto px-4 py-6">
+      <p class="text-center text-gray-500 text-sm">© 2024 Mahoyo PL. Wszystkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
