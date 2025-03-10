@@ -10,17 +10,17 @@
       theme: {
         extend: {
           colors: {
-            purple: {
-              50: '#f5f3ff',
-              100: '#ede9fe',
-              200: '#ddd6fe',
-              300: '#c4b5fd',
-              400: '#a78bfa',
-              500: '#8b5cf6',
-              600: '#7c3aed',
-              700: '#6d28d9',
-              800: '#5b21b6',
-              900: '#4c1d95',
+            brown: {
+              50: '#F5F2EF',
+              100: '#EBE5DF',
+              200: '#D7CCBF',
+              300: '#C3B29F',
+              400: '#AF987F',
+              500: '#8B7355',
+              600: '#7A6549',
+              700: '#69573D',
+              800: '#584931',
+              900: '#473B25',
             },
           },
         },
@@ -33,13 +33,13 @@
     <div class="container mx-auto px-4 py-4">
       <nav class="flex items-center justify-between">
         <div class="flex items-center">
-          <a href="index.html" class="text-xl font-bold text-purple-700">Mahoyo PL</a>
+          <a href="index.html" class="text-xl font-bold text-brown-700">Mahoyo PL</a>
         </div>
         
         <div class="hidden md:flex space-x-8">
-          <a href="index.html" class="text-gray-600 hover:text-purple-700">Strona główna</a>
-          <a href="ekipa.html" class="text-purple-700 font-medium">Ekipa</a>
-          <a href="status.html" class="text-gray-600 hover:text-purple-700">Stan projektu</a>
+          <a href="index.html" class="text-gray-600 hover:text-brown-700">Strona główna</a>
+          <a href="ekipa.html" class="text-brown-700 font-medium">Ekipa</a>
+          <a href="status.html" class="text-gray-600 hover:text-brown-700">Stan projektu</a>
         </div>
         
         <button class="md:hidden focus:outline-none" id="mobile-menu-button">
@@ -51,9 +51,9 @@
       
       <div class="hidden md:hidden" id="mobile-menu">
         <div class="flex flex-col space-y-4 py-4">
-          <a href="index.html" class="text-gray-600 hover:text-purple-700">Strona główna</a>
-          <a href="ekipa.html" class="text-purple-700 font-medium">Ekipa</a>
-          <a href="status.html" class="text-gray-600 hover:text-purple-700">Stan projektu</a>
+          <a href="index.html" class="text-gray-600 hover:text-brown-700">Strona główna</a>
+          <a href="ekipa.html" class="text-brown-700 font-medium">Ekipa</a>
+          <a href="status.html" class="text-gray-600 hover:text-brown-700">Stan projektu</a>
         </div>
       </div>
     </div>
@@ -62,46 +62,43 @@
   <main class="container mx-auto px-4 py-8">
     <section class="py-12">
       <div class="max-w-3xl mx-auto">
-        <h1 class="text-3xl font-bold text-purple-700 mb-8 text-center">Nasza Ekipa</h1>
+        <h1 class="text-3xl font-bold text-brown-700 mb-8 text-center">Nasza ekipa</h1>
         
         <p class="text-gray-700 mb-8 text-center">Poznaj ludzi, którzy stoją za polskim tłumaczeniem "Mahoutsukai no Yoru".</p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="bg-purple-100 h-20 flex items-center justify-center">
-              <span class="text-purple-700 font-bold text-xl">Sölve</span>
+            <div class="bg-brown-100 h-20 flex items-center justify-center">
+              <span class="text-brown-700 font-bold text-xl">Sölve</span>
             </div>
             <div class="p-4">
-              <h3 class="font-semibold text-gray-800 mb-2">Główny Tłumacz</h3>
-              <p class="text-gray-600 text-sm">Odpowiada za tłumaczenie głównej fabuły i dialogów, dbając o zachowanie oryginalnego stylu i kontekstu.</p>
+              <h3 class="font-semibold text-gray-800 mb-2">Tłumacz</h3>
             </div>
           </div>
           
           <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="bg-purple-100 h-20 flex items-center justify-center">
-              <span class="text-purple-700 font-bold text-xl">masagrator</span>
+            <div class="bg-brown-100 h-20 flex items-center justify-center">
+              <span class="text-brown-700 font-bold text-xl">masagrator</span>
             </div>
             <div class="p-4">
               <h3 class="font-semibold text-gray-800 mb-2">Programista</h3>
-              <p class="text-gray-600 text-sm">Zajmuje się technicznymi aspektami implementacji tłumaczenia do gry, dbając o poprawne wyświetlanie polskich znaków.</p>
             </div>
           </div>
           
           <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="bg-purple-100 h-20 flex items-center justify-center">
-              <span class="text-purple-700 font-bold text-xl">Crim</span>
+            <div class="bg-brown-100 h-20 flex items-center justify-center">
+              <span class="text-brown-700 font-bold text-xl">Crim</span>
             </div>
             <div class="p-4">
-              <h3 class="font-semibold text-gray-800 mb-2">Korektor</h3>
-              <p class="text-gray-600 text-sm">Odpowiada za korektę tłumaczenia, sprawdzając poprawność gramatyczną, stylistyczną i spójność terminologii.</p>
+              <h3 class="font-semibold text-gray-800 mb-2">Tłumacz</h3>
             </div>
           </div>
         </div>
         
-        <div class="mt-12 bg-purple-50 rounded-lg p-6">
+        <div class="mt-12 bg-brown-50 rounded-lg p-6">
           <h2 class="text-xl font-semibold text-gray-800 mb-4">Dołącz do nas!</h2>
           <p class="text-gray-700 mb-4">Jeśli jesteś zainteresowany/a współpracą przy tłumaczeniu, masz doświadczenie w tłumaczeniu tekstów z języka japońskiego lub angielskiego, lub po prostu chcesz pomóc w projekcie, skontaktuj się z nami!</p>
-          <a href="#" class="inline-block bg-purple-600 text-white px-6 py-2 rounded-md hover:bg-purple-700 transition">Kontakt</a>
+          <a href="#" class="inline-block bg-brown-600 text-white px-6 py-2 rounded-md hover:bg-brown-700 transition">Kontakt</a>
         </div>
       </div>
     </section>
@@ -109,7 +106,7 @@
 
   <footer class="bg-gray-50 border-t border-gray-200">
     <div class="container mx-auto px-4 py-6">
-      <p class="text-center text-gray-500 text-sm">© 2024 Mahoyo PL. Wszystkie prawa zastrzeżone.</p>
+      <p class="text-center text-gray-500 text-sm">© 2025 Mahoyo PL. Wszystkie prawa zastrzeżone.</p>
     </div>
   </footer>
 
